@@ -4,13 +4,16 @@
 		{{options.required ? '*' : ''}}
 	</label>
 	<input type="email"
-		   id="{{id}}"
-           formly-dynamic-name="options.key"
-           formly-custom-validation="options.validators"
-		   placeholder="{{options.placeholder}}"
-		   aria-describedby="{{id}}_description"
-		   ng-required="options.required"
-		   ng-disabled="options.disabled"
-		   ng-model="result[options.key || index]">
-   <p id="{{id}}_description" ng-if="options.description">{{options.description}}</p>
+	       id="{{id}}"
+	       formly-dynamic-name="options.key"
+	       formly-custom-validation="options.validators"
+	       placeholder="{{options.placeholder}}"
+	       aria-describedby="{{id}}_description"
+	       ng-required="options.required"
+	       ng-disabled="options.disabled"
+	       ng-model="result[options.key || index]">
+	<p id="{{id}}_description"
+	   ng-if="options.description">
+		{{options.description}}
+	</p>
 </div>

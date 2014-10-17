@@ -4,13 +4,16 @@
 		{{options.required ? '*' : ''}}
 	</label>
 	<select id="{{id}}"
-            formly-dynamic-name="options.key"
-            formly-custom-validation="options.validators"
-			aria-describedby="{{id}}_description"
-			ng-model="result[options.key || index]"
-			ng-required="options.required"
-			ng-disabled="options.disabled"
-			ng-options="option.value as option.name group by option.group for option in options.options">
+	        formly-dynamic-name="options.key"
+	        formly-custom-validation="options.validators"
+	        aria-describedby="{{id}}_description"
+	        ng-model="result[options.key || index]"
+	        ng-required="options.required"
+	        ng-disabled="options.disabled"
+	        ng-options="option.value as option.name group by option.group for option in options.options">
 	</select>
-  <p id="{{id}}_description" ng-if="options.description">{{options.description}}</p>
+	<p id="{{id}}_description"
+	   ng-if="options.description">
+		{{options.description}}
+	</p>
 </div>
