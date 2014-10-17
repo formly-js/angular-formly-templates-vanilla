@@ -144,6 +144,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('dev', [
+		'build',
 		'connect:dev',
 		'watch'
 	]);

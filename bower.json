@@ -8,7 +8,7 @@
     "dist/angular-formly-templates-vanilla.min.js",
     "dist/angular-formly-templates-vanilla.min.map"
   ],
-  "description": "Angular-Formly plugin which outputs plain html.",
+  "description": "Angular-Formly plugin which outputs plain html form fields.",
   "keywords": [
     "AngularJs",
     "form",

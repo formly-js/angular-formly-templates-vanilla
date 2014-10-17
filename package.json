@@ -14,7 +14,7 @@
       "url": "https://raw.githubusercontent.com/formly-js/angular-formly-templates-vanilla/master/LICENSE"
     }
   ],
-  "description": "Angular-Formly plugin which outputs plain html.",
+  "description": "Angular-Formly plugin which outputs plain html form fields.",
   "devDependencies": {
     "bower": "1.2.7",
     "connect-livereload": "~0.4.0",
