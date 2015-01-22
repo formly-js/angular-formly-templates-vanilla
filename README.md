@@ -35,16 +35,22 @@ Example text field:
  - npm
 
 
-See `bower.json` and `index.html` in the `master` branch for a full list / more details
-
 ## Install in your project
 - Install [Angular-Formly](https://github.com/formly-js/angular-formly)
 
-- Install Angular-Formly: Vanilla Templates
- `$ bower install angular-formly-templates-vanilla --save`
+- Install Angular-Formly: Bootstrap Templates
+ `$ bower install angular-formly angular-formly-templates-vanilla --save`
+ or
+ `$ npm install angular-formly angular-formly-templates-vanilla --save`
 
 - Include the javascript file in your index.html, Formly comes in the following flavors:
+ `<script src="bower_components/angular-formly/dist/formly.min.js"></script>`
  `<script src="bower_components/angular-formly-templates-vanilla/dist/angular-formly-templates-vanilla.min.js"></script>`
+ and
+ `angular.module('yourModule', ['formly', 'formlyVanilla']);`
+
+ or
+ `angular.module('yourModule', [require('angular-formly'), require('angular-formly-templates-vanilla')]);`
 
 ## Documentation
 
