@@ -4,25 +4,10 @@
 ## Angular-Formly: Vanilla Template
 This is a template for Angular-Formly which adds template basic files with no css classes. Each field is wrapped in a div. This library is not standalone and requires angular-formly to be present and loaded.
 
-Example text field:
-```html
-	<div>
-		<label for="{{id}}">
-			{{options.label || 'Text'}}
-			{{options.required ? '*' : ''}}
-		</label>
-		<input type="text"
-		       id="{{id}}"
-		       formly-dynamic-name="options.key"
-		       formly-custom-validation="options.validators"
-		       placeholder="{{options.placeholder}}"
-		       aria-describedby="{{id}}_description"
-		       ng-required="options.required"
-		       ng-disabled="options.disabled"
-		       ng-model="result[options.key || index]">
-		<p id="{{id}}_description" ng-if="options.description">{{options.description}}</p>
-	</div>
-```
+### NOTICE: UPGRADING FROM 2.0 to 3.0?
+
+There were some [significant changes](https://github.com/formly-js/angular-formly/blob/master/CHANGELOG.md) that you'll want to be aware of. In order to upgrade and get all the cool features, you're going to need to change your field configurations. [Here is a tool](http://jsbin.com/ruwoke) that should help make that process easier. Also, if you are not able to update the configuration very easily, see [this issue](https://github.com/formly-js/angular-formly/issues/162) for ideas on how to ease things a little.
+
 
 ### Demo http://formly-js.github.io/angular-formly
 
@@ -262,34 +247,6 @@ _Example select field_
 		}
 	}
 ```
-
-
----
-#### Number form field
->The number field allows input that is restricted to numbers. Browsers also provide minimal ui to increase and decrease the current value.
-
-##### default (number, optional)
-
-##### min (number, optional)
->`min` sets minimum acceptable value for the input.
-
-##### max (number, optional)
->`max` sets maximum acceptable value for the input.
-
-_Example number field_
-```json
-	{
-		"key": "love",
-		"type": "number",
-		"templateOptions": {
-      "label": "How much love?",
-      "min": 0,
-      "max": 100,
-      "required": true
-		}
-	}
-```
-
 
 ## Contributing
 
