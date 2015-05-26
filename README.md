@@ -1,3 +1,7 @@
+# NOTICE: NOT MAINTAINED
+
+It's so easy to create custom templates that this library does not provide much value and by using it you'll wind up having to do a bunch of work arounds. It is recommended that you just create your own templates. If you disagree, feel free to let me know in the issues and I can giv eyou ownership of the repo.
+
 [![Build Status](https://travis-ci.org/formly-js/angular-formly.svg)](https://travis-ci.org/formly-js/angular-formly)
 [![Coverage Status](https://img.shields.io/coveralls/formly-js/angular-formly.svg)](https://coveralls.io/r/formly-js/angular-formly)
 
